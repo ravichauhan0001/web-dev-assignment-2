@@ -1,0 +1,194 @@
+/* Smooth scrolling between sections */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic page setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: beige;
+  color: black;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Skip link button */
+.skip-link {
+  text-decoration: none;
+  background-color: #07f72f;
+  color: white;
+  padding: 8px 12px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+.skip-link:hover {
+  background-color: #05c628;
+}
+
+/* Header area */
+header {
+  background-color: #07f72f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+nav ul li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Hero section */
+#Hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e9f5e9;
+}
+#Hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* About section */
+#about {
+  text-align: center;
+  padding: 50px 20px;
+}
+#about img {
+  border-radius: 12px;
+  margin-top: 15px;
+  width: 80%;
+  max-width: 500px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#about img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects section */
+#projects {
+  padding: 50px 20px;
+  background-color: #f2f2f2;
+}
+#projects h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#projects ul {
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+}
+#projects li {
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid #07f72f;
+  transition: background-color 0.3s;
+}
+#projects li:hover {
+  background-color: #e4ffe4;
+}
+
+/* Skills section */
+#skills {
+  padding: 50px 20px;
+  text-align: center;
+}
+#skills table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 70%;
+  max-width: 500px;
+}
+#skills th, #skills td {
+  padding: 10px;
+  border: 1px solid #07f72f;
+}
+#skills th {
+  background-color: #07f72f;
+  color: white;
+}
+#skills tr:hover {
+  background-color: #e9f5e9;
+}
+
+/* Contact section */
+#contact {
+  padding: 50px 20px;
+  background-color: #e9f5e9;
+}
+#contact form {
+  max-width: 500px;
+  margin: auto;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #07f72f;
+  outline: none;
+}
+#contact button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #07f72f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#contact button:hover {
+  background-color: #05c628;
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #07f72f;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #about img {
+    width: 100%;
+  }
+
+  #skills table {
+    width: 100%;
+  }
+}
